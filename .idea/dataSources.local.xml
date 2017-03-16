@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - ad_841f0d442eeeaae@us-cdbr-iron-east-04.cleardb.net" uuid="1cbdf93c-1900-41ce-b6b7-2e38bdc44020">
+      <secret-storage>master_key</secret-storage>
+      <user-name>b2d52261c59187</user-name>
+    </data-source>
+    <data-source name="MySQL - hynra_ngantribot@hynra.com" uuid="368b12ff-ce09-4c09-8402-83ad8d876d95">
+      <secret-storage>master_key</secret-storage>
+      <user-name>hynra_ngantribot</user-name>
+    </data-source>
+    <data-source name="MySQL - eventkampus@167.205.7.228" uuid="4968f1cd-5eea-498a-96f3-d65e9be783d2">
+      <secret-storage>master_key</secret-storage>
+      <user-name>edoganteng</user-name>
+      <schema-pattern>eventkampus.*</schema-pattern>
+      <default-schemas>eventkampus.*</default-schemas>
+    </data-source>
+  </component>
+</project>

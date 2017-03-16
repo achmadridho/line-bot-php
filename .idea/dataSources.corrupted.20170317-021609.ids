@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - ad_841f0d442eeeaae@us-cdbr-iron-east-04.cleardb.net" uuid="1cbdf93c-1900-41ce-b6b7-2e38bdc44020">
+    <database-info product="MySQL" version="5.5.46-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="ad_841f0d442eeeaae">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <table id="3" parent="1" name="customers"/>
+      <column id="4" parent="3" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="5" parent="3" name="display_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="6" parent="3" name="picture_url">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="7" parent="3" name="status_message">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+    </database-model>
+  </data-source>
+  <data-source name="MySQL - hynra_ngantribot@hynra.com" uuid="368b12ff-ce09-4c09-8402-83ad8d876d95">
+    <database-info product="MySQL" version="5.5.5-10.0.27-MariaDB-cll-lve" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="hynra_ngantribot">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <table id="3" parent="1" name="line_user"/>
+      <table id="4" parent="1" name="tb_session"/>
+      <table id="5" parent="1" name="tb_queue"/>
+      <column id="6" parent="3" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="7" parent="3" name="picture_url">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="8" parent="3" name="display_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="9" parent="3" name="status_message">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="10" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="11" parent="4" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="12" parent="4" name="start_at">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="13" parent="4" name="end_at">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="14" parent="4" name="total_queue">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="15" parent="4" name="current_queue">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="16" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="17" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="18" parent="5" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="19" parent="5" name="session_id">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="20" parent="5" name="queue_no">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="21" parent="5" name="status">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <index id="22" parent="5" name="tb_queue_id_uindex">
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="23" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="24" parent="5" name="tb_queue_id_uindex">
+        <columns>id</columns>
+        <underlying-index>tb_queue_id_uindex</underlying-index>
+      </key>
+    </database-model>
+  </data-source>
+</component>
